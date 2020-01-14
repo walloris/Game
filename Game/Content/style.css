@@ -1,0 +1,46 @@
+﻿@font-face {
+   font-family: 'SpecialFont';
+   src: local('Escape'),
+        url('fonts/font.ttf') format('truetype');
+   font-style: normal;
+}
+
+#game {
+	height: 480px; width: 640px; position: absolute; left: 50%; top: 50%;
+	margin-left: -321px; margin-top: -241px; border: 1px solid #ccc; overflow: hidden;
+}
+#world { 
+	margin: 0; padding: 0; height: 100%; width: 100%; position: absolute;
+	bottom: 0; left: 0; z-index: 0;
+}
+.gauge {
+	margin: 0; padding: 0; height: 50px; width: 70px; text-align: right; font-size: 1em;
+	font-weight: bold; position: absolute; top: 17px; right: 52px; z-index: 1000;
+	position: absolute; font-family: 'SpecialFont';
+}
+.gaugeSprite {
+	margin: 0; padding: 0; z-index: 1000; position: absolute;
+}
+
+#hp {
+	left: 0;
+	top: 50px;
+	color: red;
+}
+#mp {
+	left: 0;
+	top: 30px;
+	color: blue;
+}
+#mana {
+	background-position: 0 0; top: 15px; left: 70px;
+}
+#live {
+	background-position : 0 -430px; top: 50px; right: 8px;
+}
+.figure {
+	margin: 0; padding: 0; z-index: 99; position: absolute;
+}
+.matter {
+	margin: 0; padding: 0; z-index: 95; position: absolute; width: 32px; height: 32px;
+}
